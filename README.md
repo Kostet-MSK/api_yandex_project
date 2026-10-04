@@ -19,29 +19,29 @@ API Яндекс.Прилавка, `Main.Kits → Создание набора`
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 Запуск
 Все тесты:
-bash
+```bash
 pytest
-
+```
 С подробным выводом:
-bash
+```bash
 pytest -v
-
+```
 
 Структура
-text
-.
+```text
 ├── configuration.py            # URL API и эндпоинты
 ├── data.py                     # шаблоны тел запросов и заголовки
 ├── sender_stand_request.py     # функции отправки HTTP-запросов
 ├── create_kit_name_kit_test.py # тесты
 ├── requirements.txt            # зависимости
 └── README.md
-
+```
 Список тестов
+```text
 №	Проверка	Код
 1	1 символ в имени	201
 2	511 символов в имени	201
@@ -54,3 +54,4 @@ text
 9	Цифры в виде строки	201
 10	Параметр name не передан	400
 11	Неверный тип параметра (число)	400
+```
